@@ -27,7 +27,6 @@ public class DataInitializer implements ApplicationRunner {
         if (userRepository.count() == 0) {
             createUser("user", "password", "ROLE_USER");
             createUser("admin", "password", "ROLE_USER,ROLE_ADMIN");
-            log.info("Demo users");
         }
     }
 
