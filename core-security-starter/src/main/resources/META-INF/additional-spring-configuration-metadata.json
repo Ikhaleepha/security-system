@@ -1,0 +1,21 @@
+{
+  "properties": [
+    {
+      "name": "mam.security.jwt.secret",
+      "type": "java.lang.String",
+      "description": "Base64-encoded secret key for JWT signing (minimum 256 bits for HS256)"
+    },
+    {
+      "name": "mam.security.jwt.expiration-ms",
+      "type": "java.lang.Long",
+      "defaultValue": 86400000,
+      "description": "JWT token expiration time in milliseconds"
+    },
+    {
+      "name": "mam.security.jwt.issuer",
+      "type": "java.lang.String",
+      "defaultValue": "mam-security",
+      "description": "JWT issuer claim value"
+    }
+  ]
+}
